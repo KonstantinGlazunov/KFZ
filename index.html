@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AutoService Braunfels | Faire Kfz-Meisterwerkstatt in Braunfels</title>
+    <meta name="description" content="AutoService Braunfels ist Ihre faire Kfz-Meisterwerkstatt in Braunfels: Inspektion, HU/AU, Ölwechsel, Bremsen, Reifenwechsel, Klimaservice und Fehlerdiagnose mit klarer Einschätzung vor Arbeitsbeginn.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt springen</a>
+
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="brand" href="#" aria-label="AutoService Braunfels Startseite" data-i18n-aria-label="brand.aria">
+          <span class="brand-mark">AB</span>
+          <span>
+            <strong>AutoService Braunfels</strong>
+            <small data-i18n="brand.subtitle">Kfz-Meisterwerkstatt</small>
+          </span>
+        </a>
+        <nav class="main-nav" aria-label="Hauptnavigation" data-i18n-aria-label="nav.aria">
+          <a href="#leistungen" data-i18n="nav.services">Leistungen</a>
+          <a href="#preise" data-i18n="nav.prices">Preise</a>
+          <a href="#termin" data-i18n="nav.appointment">Termin</a>
+          <a href="#bewertungen" data-i18n="nav.reviews">Bewertungen</a>
+          <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+        </nav>
+        <div class="header-actions">
+          <a class="phone-link" href="tel:+496444123456">06444 123456</a>
+          <a class="btn btn-primary" href="#termin" data-i18n="cta.book">Termin buchen</a>
+          <div class="language-switcher" role="group" aria-label="Sprache wählen" data-i18n-aria-label="language.aria">
+            <button type="button" class="lang-btn" data-lang="de" aria-pressed="true">DE</button>
+            <span aria-hidden="true">|</span>
+            <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+          </div>
+        </div>
+        <div class="mobile-language-switcher language-switcher" role="group" aria-label="Sprache wählen" data-i18n-aria-label="language.aria">
+          <button type="button" class="lang-btn" data-lang="de" aria-pressed="true">DE</button>
+          <span aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Freie Werkstatt in der Nähe von Braunfels</p>
+            <h1 data-i18n="hero.title">Надёжный автосервис рядом с вами. Понятная оценка стоимости и быстрая запись на термин.</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Inspektion, HU/AU, Ölwechsel, Bremsen, Reifenservice, Klimaservice und Fehlerdiagnose – verständlich erklärt, fachgerecht erledigt und erst nach Ihrer Freigabe durchgeführt.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-large" href="#termin" data-i18n="cta.appointmentOnline">Termin online anfragen</a>
+              <a class="btn btn-secondary btn-large" href="#preise" data-i18n="cta.estimate">Kosten einschätzen lassen</a>
+            </div>
+            <div class="micro-flow" aria-label="Schneller Ablauf" data-i18n-aria-label="micro.aria">
+              <span data-i18n="micro.service">Service prüfen</span>
+              <span data-i18n="micro.costs">Kosten einschätzen</span>
+              <span data-i18n="micro.date">Termin finden</span>
+            </div>
+            <ul class="trust-badges" aria-label="Vertrauensmerkmale" data-i18n-aria-label="trustBadges.aria">
+              <li data-i18n="trustBadges.master">Meisterbetrieb</li>
+              <li data-i18n="trustBadges.approval">Keine Reparatur ohne Freigabe</li>
+              <li data-i18n="trustBadges.parts">Erstausrüsterqualität</li>
+              <li data-i18n="trustBadges.transparent">Transparente Kosteneinschätzung</li>
+              <li data-i18n="trustBadges.brands">Viele Marken</li>
+            </ul>
+          </div>
+          <div class="hero-media reveal">
+            <img src="assets/hero-workshop.webp" width="1799" height="874" alt="Mechaniker erklärt einem Kunden in einer hellen Kfz-Werkstatt Diagnosewerte am Tablet" data-i18n-alt="hero.imageAlt">
+            <div class="hero-note">
+              <strong data-i18n="hero.noteTitle">Klare Einschätzung vor Arbeitsbeginn</strong>
+              <span data-i18n="hero.noteText">Sie entscheiden, was gemacht wird.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="finder" id="termin" aria-labelledby="finder-title">
+        <div class="container">
+          <div class="section-heading compact">
+            <p class="eyebrow" data-i18n="finder.eyebrow">Werkstatttermin</p>
+            <h2 id="finder-title" data-i18n="finder.title">Womit können wir helfen?</h2>
+            <p data-i18n="finder.text">Wählen Sie Fahrzeug, Service und Wunschdatum. Wir melden uns mit Einschätzung, Verfügbarkeit und nächsten Schritten.</p>
+          </div>
+          <form class="booking-form" novalidate>
+            <div class="field">
+              <label for="vehicle" data-i18n="form.vehicle">Fahrzeug</label>
+              <input id="vehicle" name="vehicle" type="text" autocomplete="off" placeholder="Marke / Modell" data-i18n-placeholder="form.vehiclePlaceholder" required>
+              <small class="error" data-i18n="form.vehicleError">Bitte nennen Sie Marke oder Modell.</small>
+            </div>
+            <div class="field">
+              <label for="service" data-i18n="form.service">Service auswählen</label>
+              <select id="service" name="service" required>
+                <option value="" data-i18n="form.servicePlaceholder">Bitte wählen</option>
+                <option value="Inspektion" data-i18n="services.inspection">Inspektion</option>
+                <option value="HU/AU" data-i18n="services.huau">HU/AU</option>
+                <option value="Ölwechsel" data-i18n="services.oil">Ölwechsel</option>
+                <option value="Bremsen wechseln" data-i18n="services.brakesSelect">Bremsen wechseln</option>
+                <option value="Reifenwechsel" data-i18n="services.tiresSelect">Reifenwechsel</option>
+                <option value="Klimaservice" data-i18n="services.climate">Klimaservice</option>
+                <option value="Batterie" data-i18n="services.battery">Batterie</option>
+                <option value="Fehlerdiagnose" data-i18n="services.diagnostic">Fehlerdiagnose</option>
+              </select>
+              <small class="error" data-i18n="form.serviceError">Bitte wählen Sie einen Service.</small>
+            </div>
+            <div class="field">
+              <label for="place" data-i18n="form.place">PLZ / Ort</label>
+              <input id="place" name="place" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="35619 Braunfels" required>
+              <small class="error" data-i18n="form.placeError">Bitte geben Sie PLZ oder Ort an.</small>
+            </div>
+            <div class="field">
+              <label for="date" data-i18n="form.date">Wunschdatum</label>
+              <input id="date" name="date" type="date" required>
+              <small class="error" data-i18n="form.dateError">Bitte wählen Sie ein Datum.</small>
+            </div>
+            <div class="field">
+              <label for="contact" data-i18n="form.contact">Kontakt</label>
+              <input id="contact" name="contact" type="text" autocomplete="tel email" placeholder="Telefon oder E-Mail" data-i18n-placeholder="form.contactPlaceholder" required>
+              <small class="error" data-i18n="form.contactError">Bitte hinterlassen Sie eine Kontaktmöglichkeit.</small>
+            </div>
+            <button class="btn btn-primary btn-form" type="submit" data-i18n="cta.requestAppointment">Termin anfragen</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <div class="quick-services" aria-label="Schnelle Serviceauswahl" data-i18n-aria-label="quick.aria">
+            <button type="button" data-service="Inspektion"><span data-i18n="quick.inspection.title">Inspektion</span><small data-i18n="quick.inspection.text">nach Fahrzeugmodell</small></button>
+            <button type="button" data-service="HU/AU"><span data-i18n="quick.huau.title">HU/AU</span><small data-i18n="quick.huau.text">Prüfung vorbereiten</small></button>
+            <button type="button" data-service="Ölwechsel"><span data-i18n="quick.oil.title">Ölwechsel</span><small data-i18n="quick.oil.text">ab 89 €</small></button>
+            <button type="button" data-service="Bremsen wechseln"><span data-i18n="quick.brakes.title">Bremsen</span><small data-i18n="quick.brakes.text">nach Prüfung</small></button>
+            <button type="button" data-service="Reifenwechsel"><span data-i18n="quick.tires.title">Reifenwechsel</span><small data-i18n="quick.tires.text">ab 39 €</small></button>
+            <button type="button" data-service="Klimaservice"><span data-i18n="quick.climate.title">Klimaservice</span><small data-i18n="quick.climate.text">ab 49 €</small></button>
+            <button type="button" data-service="Batterie"><span data-i18n="quick.battery.title">Batterie</span><small data-i18n="quick.battery.text">Test und Wechsel</small></button>
+            <button type="button" data-service="Fehlerdiagnose"><span data-i18n="quick.diagnostic.title">Fehlerdiagnose</span><small data-i18n="quick.diagnostic.text">ab 49 €</small></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust section" aria-labelledby="trust-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="trust.eyebrow">Warum AutoService Braunfels</p>
+            <h2 id="trust-title" data-i18n="trust.title">Warum Kunden uns ihr Auto anvertrauen</h2>
+          </div>
+          <div class="card-grid five">
+            <article class="info-card"><span class="icon">€</span><h3 data-i18n="trust.card1.title">Klare Preise</h3><p data-i18n="trust.card1.text">Vor Beginn erhalten Sie eine verständliche Einschätzung. Keine Zusatzarbeit ohne Ihre Freigabe.</p></article>
+            <article class="info-card"><span class="icon">✓</span><h3 data-i18n="trust.card2.title">Ehrliche Diagnose</h3><p data-i18n="trust.card2.text">Wir erklären, was dringend ist, was warten kann und welche Lösung wirtschaftlich sinnvoll ist.</p></article>
+            <article class="info-card"><span class="icon">M</span><h3 data-i18n="trust.card3.title">Meisterqualität</h3><p data-i18n="trust.card3.text">Wartung und Reparatur nach Herstellervorgaben – mit Ersatzteilen in Erstausrüsterqualität.</p></article>
+            <article class="info-card"><span class="icon">↗</span><h3 data-i18n="trust.card4.title">Schnelle Termine</h3><p data-i18n="trust.card4.text">Viele Standardservices können kurzfristig angefragt werden – online, telefonisch oder direkt vor Ort.</p></article>
+            <article class="info-card"><span class="icon">i</span><h3 data-i18n="trust.card5.title">Dokumentierte Arbeit</h3><p data-i18n="trust.card5.text">Auf Wunsch zeigen wir ausgebaute Teile und erklären die wichtigsten Arbeitsschritte.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="direct section band" aria-labelledby="direct-title">
+        <div class="container split-grid">
+          <div>
+            <p class="eyebrow" data-i18n="direct.eyebrow">Direktannahme</p>
+            <h2 id="direct-title" data-i18n="direct.title">Wir schauen gemeinsam hin – bevor Kosten entstehen</h2>
+            <p data-i18n="direct.text">Bei der Direktannahme prüfen wir Ihr Fahrzeug sichtbar und verständlich. Sie entscheiden danach, was gemacht wird. So behalten Sie die Kontrolle über Kosten, Umfang und Prioritäten.</p>
+            <a class="btn btn-secondary" href="#termin" data-i18n="direct.cta">Direktannahme anfragen</a>
+          </div>
+          <img class="rounded-image" src="assets/direktannahme.webp" width="1536" height="1024" alt="Mechaniker zeigt einem Kunden bei der Direktannahme eine geprüfte Fahrzeugkomponente auf der Hebebühne" data-i18n-alt="direct.imageAlt">
+        </div>
+      </section>
+
+      <section class="services section" id="leistungen" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="servicesSection.eyebrow">Kfz-Werkstatt für viele Anliegen</p>
+            <h2 id="services-title" data-i18n="servicesSection.title">Alles Wichtige für Ihr Auto – an einem Ort</h2>
+          </div>
+          <div class="service-grid">
+            <article class="service-card"><span class="service-icon">🔧</span><h3 data-i18n="serviceCards.inspection.title">Inspektion nach Herstellervorgaben</h3><p data-i18n="serviceCards.inspection.text">Wartung mit passenden Prüfpositionen für Ihr Fahrzeug.</p><a href="#termin" data-i18n="cta.more">Mehr erfahren</a><a class="mini-btn" href="#termin" data-i18n="cta.book">Termin buchen</a></article>
+            <article class="service-card"><span class="service-icon">§</span><h3 data-i18n="serviceCards.huau.title">HU/AU-Vorbereitung</h3><p data-i18n="serviceCards.huau.text">Sichtprüfung und sinnvolle Vorbereitung für die Hauptuntersuchung.</p><a href="#termin" data-i18n="cta.more">Mehr erfahren</a><a class="mini-btn" href="#termin" data-i18n="cta.book">Termin buchen</a></article>
+            <article class="service-card"><span class="service-icon">◎</span><h3 data-i18n="serviceCards.brakes.title">Bremsenservice</h3><p data-i18n="serviceCards.brakes.text">Bremsen prüfen, Beläge und Scheiben fachgerecht wechseln.</p><a href="#termin" data-i18n="cta.more">Mehr erfahren</a><a class="mini-btn" href="#termin" data-i18n="cta.book">Termin buchen</a></article>
+            <article class="service-card"><span class="service-icon">⛽</span><h3 data-i18n="serviceCards.oil.title">Öl- und Filterwechsel</h3><p data-i18n="serviceCards.oil.text">Motoröl nach Spezifikation und Filter in geprüfter Qualität.</p><a href="#termin" data-i18n="cta.more">Mehr erfahren</a><a class="mini-btn" href="#termin" data-i18n="cta.book">Termin buchen</a></article>
+            <article class="service-card"><span class="service-icon">◉</span><h3 data-i18n="serviceCards.tires.title">Reifenservice & Einlagerung</h3><p data-i18n="serviceCards.tires.text">Reifenwechsel, Wuchten, Profilprüfung und saisonale Einlagerung.</p><a href="#termin" data-i18n="cta.more">Mehr erfahren</a><a class="mini-btn" href="#termin" data-i18n="cta.book">Termin buchen</a></article>
+            <article class="service-card"><span class="service-icon">❄</span><h3 data-i18n="serviceCards.climate.title">Klimaservice</h3><p data-i18n="serviceCards.climate.text">Klimaanlage prüfen, warten und bei Bedarf auffüllen.</p><a href="#termin" data-i18n="cta.more">Mehr erfahren</a><a class="mini-btn" href="#termin" data-i18n="cta.book">Termin buchen</a></article>
+            <article class="service-card"><span class="service-icon">⚡</span><h3 data-i18n="serviceCards.battery.title">Batterie & Elektrik</h3><p data-i18n="serviceCards.battery.text">Batterietest, Startprobleme, Licht und elektrische Fehler prüfen.</p><a href="#termin" data-i18n="cta.more">Mehr erfahren</a><a class="mini-btn" href="#termin" data-i18n="cta.book">Termin buchen</a></article>
+            <article class="service-card"><span class="service-icon">⌁</span><h3 data-i18n="serviceCards.diagnostic.title">Fehlerdiagnose</h3><p data-i18n="serviceCards.diagnostic.text">Fehlerspeicher auslesen, Ursachen eingrenzen und verständlich erklären.</p><a href="#termin" data-i18n="cta.more">Mehr erfahren</a><a class="mini-btn" href="#termin" data-i18n="cta.book">Termin buchen</a></article>
+            <article class="service-card"><span class="service-icon">↕</span><h3 data-i18n="serviceCards.suspension.title">Fahrwerk & Stoßdämpfer</h3><p data-i18n="serviceCards.suspension.text">Komfort, Sicherheit und Fahrverhalten gezielt prüfen lassen.</p><a href="#termin" data-i18n="cta.more">Mehr erfahren</a><a class="mini-btn" href="#termin" data-i18n="cta.book">Termin buchen</a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="process section band" aria-labelledby="process-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="process.eyebrow">Ablauf</p>
+            <h2 id="process-title" data-i18n="process.title">So läuft Ihr Werkstatttermin ab</h2>
+          </div>
+          <ol class="timeline">
+            <li class="timeline-step"><span>1</span><h3 data-i18n="process.step1.title">Termin anfragen</h3><p data-i18n="process.step1.text">Online, telefonisch oder per WhatsApp.</p></li>
+            <li class="timeline-step"><span>2</span><h3 data-i18n="process.step2.title">Fahrzeug prüfen</h3><p data-i18n="process.step2.text">Wir prüfen Ihr Anliegen und erklären die Ursache.</p></li>
+            <li class="timeline-step"><span>3</span><h3 data-i18n="process.step3.title">Einschätzung erhalten</h3><p data-i18n="process.step3.text">Sie bekommen eine klare Einschätzung zu Kosten, Umfang und Dringlichkeit.</p></li>
+            <li class="timeline-step"><span>4</span><h3 data-i18n="process.step4.title">Freigabe geben</h3><p data-i18n="process.step4.text">Erst nach Ihrer Zustimmung beginnen wir mit der Arbeit.</p></li>
+            <li class="timeline-step"><span>5</span><h3 data-i18n="process.step5.title">Reparatur durchführen</h3><p data-i18n="process.step5.text">Fachgerecht, dokumentiert und mit passenden Ersatzteilen.</p></li>
+            <li class="timeline-step"><span>6</span><h3 data-i18n="process.step6.title">Sicher weiterfahren</h3><p data-i18n="process.step6.text">Sie erhalten Ihr Fahrzeug zurück und wissen, was gemacht wurde.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="prices section" id="preise" aria-labelledby="prices-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="prices.eyebrow">Preise als Orientierung</p>
+            <h2 id="prices-title" data-i18n="prices.title">Beliebte Services – transparent kalkulierbar</h2>
+          </div>
+          <div class="price-grid">
+            <article><span data-i18n="prices.oil.label">Ölwechsel</span><strong data-i18n="prices.oil.price">ab 89 €</strong></article>
+            <article><span data-i18n="prices.tires.label">Reifenwechsel</span><strong data-i18n="prices.tires.price">ab 39 €</strong></article>
+            <article><span data-i18n="prices.climate.label">Klimacheck</span><strong data-i18n="prices.climate.price">ab 49 €</strong></article>
+            <article><span data-i18n="prices.diagnostic.label">Fehlerdiagnose</span><strong data-i18n="prices.diagnostic.price">ab 49 €</strong></article>
+            <article><span data-i18n="prices.brakes.label">Bremsenprüfung</span><strong data-i18n="prices.brakes.price">kostenlos*</strong></article>
+            <article><span data-i18n="prices.inspection.label">Inspektion</span><strong data-i18n="prices.inspection.price">nach Fahrzeugmodell</strong></article>
+          </div>
+          <p class="price-note" data-i18n="prices.note">* Bei Reparaturauftrag. Alle Preise dienen als Orientierung. Der genaue Preis hängt von Fahrzeugmodell, Teilebedarf und Arbeitsumfang ab.</p>
+        </div>
+      </section>
+
+      <section class="reviews section band" id="bewertungen" aria-labelledby="reviews-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="reviews.eyebrow">Bewertungen</p>
+            <h2 id="reviews-title" data-i18n="reviews.title">Was Kunden besonders schätzen</h2>
+          </div>
+          <div class="review-grid">
+            <figure><div aria-label="5 von 5 Sternen" data-i18n-aria-label="reviews.stars">★★★★★</div><blockquote data-i18n="reviews.one.text">Sehr transparente Beratung. Mir wurde genau erklärt, was sofort gemacht werden muss und was noch warten kann.</blockquote><figcaption data-i18n="reviews.one.name">— Markus H., Braunfels</figcaption></figure>
+            <figure><div aria-label="5 von 5 Sternen" data-i18n-aria-label="reviews.stars">★★★★★</div><blockquote data-i18n="reviews.two.text">Termin schnell bekommen, Ölwechsel und Bremsen sauber erledigt. Keine Überraschung bei der Rechnung.</blockquote><figcaption data-i18n="reviews.two.name">— Anna K., Wetzlar</figcaption></figure>
+            <figure><div aria-label="5 von 5 Sternen" data-i18n-aria-label="reviews.stars">★★★★★</div><blockquote data-i18n="reviews.three.text">Endlich eine Werkstatt, die nicht einfach repariert, sondern vorher erklärt.</blockquote><figcaption data-i18n="reviews.three.name">— Peter S., Limburg</figcaption></figure>
+            <figure><div aria-label="5 von 5 Sternen" data-i18n-aria-label="reviews.stars">★★★★★</div><blockquote data-i18n="reviews.four.text">Freundlich, sachlich und zuverlässig. Ich wusste vor der Reparatur genau, welche Kosten entstehen.</blockquote><figcaption data-i18n="reviews.four.name">— Julia M., Gießen</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="brands section" aria-labelledby="brands-title">
+        <div class="container split-grid">
+          <div>
+            <p class="eyebrow" data-i18n="brands.eyebrow">Markenübergreifend</p>
+            <h2 id="brands-title" data-i18n="brands.title">Service für viele Automarken</h2>
+            <p data-i18n="brands.text">Ob Kleinwagen, Familienauto, Transporter oder Hybridfahrzeug – wir prüfen Ihr Fahrzeug markenübergreifend und beraten Sie verständlich.</p>
+          </div>
+          <div class="brand-badges" aria-label="Beispielhafte Automarken als Textplatzhalter" data-i18n-aria-label="brands.aria">
+            <span>VW</span><span>Audi</span><span>BMW</span><span>Mercedes-Benz</span><span>Opel</span><span>Ford</span><span>Toyota</span><span>Skoda</span><span>Seat</span><span>Renault</span><span>Hyundai</span><span>Kia</span><span>Volvo</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section band" aria-labelledby="gallery-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="gallery.eyebrow">Einblicke</p>
+            <h2 id="gallery-title" data-i18n="gallery.title">Saubere Arbeit beginnt mit einer sauberen Werkstatt</h2>
+          </div>
+          <div class="photo-grid">
+            <figure><img src="assets/reception.webp" width="1536" height="1024" alt="Kunde erhält an einer sauberen Werkstattannahme seine Fahrzeugschlüssel zurück" data-i18n-alt="gallery.receptionAlt"><figcaption data-i18n="gallery.reception">Annahme & Übergabe</figcaption></figure>
+            <figure><img src="assets/diagnostic.webp" width="1536" height="1024" alt="Mechaniker nutzt ein Diagnosetablet mit OBD-Kabel im Fahrzeuginnenraum" data-i18n-alt="gallery.diagnosticAlt"><figcaption data-i18n="gallery.diagnostic">Fehlerdiagnose</figcaption></figure>
+            <figure><img src="assets/tires.webp" width="1536" height="1024" alt="Mechaniker bewegt einen Reifen in einer hellen und geordneten Werkstatt" data-i18n-alt="gallery.tiresAlt"><figcaption data-i18n="gallery.tires">Reifenservice</figcaption></figure>
+            <figure><img src="assets/engine.webp" width="1536" height="1024" alt="Mechaniker prüft bei geöffneter Motorhaube Öl- und Filterbereich" data-i18n-alt="gallery.engineAlt"><figcaption data-i18n="gallery.engine">Ölwechsel & Motorraum</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq section" aria-labelledby="faq-title">
+        <div class="container narrow">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+            <h2 id="faq-title" data-i18n="faq.title">Häufige Fragen</h2>
+          </div>
+          <div class="accordion">
+            <details><summary data-i18n="faq.one.q">Kann ich ohne Termin vorbeikommen?</summary><p data-i18n="faq.one.a">Ja, für eine kurze Ersteinschätzung können Sie vorbeikommen. Für Reparaturen und planbare Services empfehlen wir einen Termin.</p></details>
+            <details><summary data-i18n="faq.two.q">Bekomme ich vor der Reparatur einen Kostenvoranschlag?</summary><p data-i18n="faq.two.a">Ja. Sie erhalten vor Beginn eine verständliche Einschätzung. Zusätzliche Arbeiten erfolgen nur nach Ihrer Freigabe.</p></details>
+            <details><summary data-i18n="faq.three.q">Verliere ich meine Herstellergarantie?</summary><p data-i18n="faq.three.a">Bei Wartung nach Herstellervorgaben und passenden Ersatzteilen bleibt die Herstellergarantie in der Regel erhalten. Im Einzelfall prüfen wir die Vorgaben Ihres Fahrzeugs.</p></details>
+            <details><summary data-i18n="faq.four.q">Welche Automarken reparieren Sie?</summary><p data-i18n="faq.four.a">Wir betreuen viele gängige Marken. Für spezielle Modelle oder seltene Fahrzeuge prüfen wir vorab, ob die passenden Daten und Teile verfügbar sind.</p></details>
+            <details><summary data-i18n="faq.five.q">Wie schnell bekomme ich einen Termin?</summary><p data-i18n="faq.five.a">Viele Standardservices sind kurzfristig möglich. Die genaue Verfügbarkeit hängt von Serviceumfang, Teilebedarf und Auslastung ab.</p></details>
+            <details><summary data-i18n="faq.six.q">Kann ich online einen Termin buchen?</summary><p data-i18n="faq.six.a">Ja. Sie können online eine Anfrage senden. Wir bestätigen den Termin oder schlagen eine passende Alternative vor.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta section" aria-labelledby="final-title">
+        <div class="container cta-panel">
+          <div>
+            <p class="eyebrow" data-i18n="final.eyebrow">Autoreparatur ohne Überraschungen</p>
+            <h2 id="final-title" data-i18n="final.title">Ein gutes Gefühl beginnt vor der Reparatur</h2>
+            <p data-i18n="final.text">Fragen Sie Ihren Termin an – wir prüfen Ihr Anliegen und melden uns mit einer klaren Einschätzung.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="#termin" data-i18n="cta.appointmentOnline">Termin online anfragen</a>
+            <a class="btn btn-secondary" href="tel:+496444123456" data-i18n="cta.callNow">Jetzt anrufen</a>
+            <a class="btn btn-ghost" href="https://wa.me/496444123456" data-i18n="cta.whatsapp">WhatsApp schreiben</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="kontakt">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#">
+            <span class="brand-mark">AB</span>
+            <span><strong>AutoService Braunfels</strong><small data-i18n="brand.subtitle">Kfz-Meisterwerkstatt</small></span>
+          </a>
+          <p data-i18n="footer.about">Faire Kfz-Meisterwerkstatt in Braunfels für Inspektion, HU/AU, Ölwechsel, Bremsen, Reifenwechsel, Klimaservice und Fehlerdiagnose.</p>
+        </div>
+        <address>
+          <strong data-i18n="footer.addressTitle">Adresse</strong>
+          Musterstraße 12<br>
+          35619 Braunfels<br>
+          <a href="#" data-i18n="footer.maps">Google Maps öffnen</a>
+        </address>
+        <div>
+          <strong data-i18n="footer.hoursTitle">Öffnungszeiten</strong>
+          <p data-i18n-html="footer.hours">Mo–Fr 08:00–18:00<br>Sa nach Vereinbarung</p>
+        </div>
+        <div>
+          <strong data-i18n="footer.contactTitle">Kontakt</strong>
+          <p><a href="tel:+496444123456">06444 123456</a><br><a href="mailto:termin@autoservice-braunfels.de">termin@autoservice-braunfels.de</a></p>
+        </div>
+        <div>
+          <strong data-i18n="footer.servicesTitle">Leistungen</strong>
+          <p><a href="#leistungen" data-i18n="footer.service1">Kfz-Werkstatt</a><br><a href="#preise" data-i18n="footer.service2">Preise</a><br><a href="#termin" data-i18n="footer.service3">Werkstatttermin</a></p>
+        </div>
+        <div class="legal">
+          <a href="#" data-i18n="footer.imprint">Impressum</a>
+          <a href="#" data-i18n="footer.privacy">Datenschutz</a>
+          <a href="#" data-i18n="footer.terms">AGB</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobile-sticky" aria-label="Schnellkontakt" data-i18n-aria-label="mobileSticky.aria">
+      <a href="tel:+496444123456" data-i18n="cta.call">Anrufen</a>
+      <a href="#termin" data-i18n="cta.book">Termin buchen</a>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
