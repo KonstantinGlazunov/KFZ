@@ -10,6 +10,7 @@
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt springen</a>
+    <a class="demo-close-fab" href="./" aria-label="Zurueck zur vorherigen Seite" style="position:fixed;top:calc(var(--header-height, 4.5rem) + 12px);right:1rem;z-index:120;display:grid;place-items:center;width:48px;height:48px;border:1px solid rgba(38,48,47,.12);border-radius:999px;background:rgba(255,255,255,.72);color:inherit;box-shadow:0 10px 22px rgba(38,48,47,.08);font-size:1.8rem;line-height:1;font-weight:300;text-decoration:none;backdrop-filter:blur(10px);opacity:.78;transition:transform 180ms ease,border-color 180ms ease,box-shadow 180ms ease,opacity 180ms ease;" onmouseenter="this.style.opacity='.96';" onmouseleave="this.style.opacity='.78';" onclick="if (history.length > 1) { history.back(); return false; } if (document.referrer) { location.href = document.referrer; return false; } return true;">×</a>
 
     <header class="site-header">
       <div class="container header-grid">
